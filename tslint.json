@@ -1,0 +1,25 @@
+{
+  "extends": [
+    "tslint:recommended"
+  ],
+  "rules": {
+    "ban-types": [ true, [ "Object", "Use {} instead." ], [ "String"] ],
+    "indent": [ true, "spaces", 2 ],
+    "member-ordering": [ true, { "order": [
+      "public-static-field",
+      "protected-static-field",
+      "private-static-field",
+      "public-instance-field",
+      "protected-instance-field",
+      "private-instance-field",
+      "constructor",
+      "public-instance-method",
+      "protected-instance-method",
+      "private-instance-method"
+    ]}],
+    "no-consecutive-blank-lines": [ true, 2 ],
+    "no-console": [ true, "debug", "info", "time", "timeEnd", "trace" ],
+    "no-magic-numbers": [ true, -1, 0, 1, 10, 100, 1000 ],
+    "no-null-keyword": true
+  }
+}
